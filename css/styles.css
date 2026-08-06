@@ -118,3 +118,116 @@ body {
   flex-direction: column;
   gap: 2.5rem;
 }
+
+.banner-bienvenida {
+  background: linear-gradient(90deg, #424242 0%, #2b2b2b 100%);
+  border-radius: var(--radius-md);
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #444;
+  overflow: hidden;
+}
+
+.banner-texto h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.banner-texto .highlight {
+  color: var(--color-primary);
+}
+
+.banner-texto p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+.banner-imagen img {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+.tarjetas-dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.tarjeta {
+  border-radius: var(--radius-md);
+  background-color: var(--color-secondary);
+  border: 1.5px solid var(--color-primary);
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.tarjeta a {
+  text-decoration: none;
+  color: var(--color-text-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.tarjeta h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.tarjeta img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.tarjeta-activa {
+  background-color: var(--color-primary);
+}
+
+.tarjeta-activa a {
+  color: var(--color-text-1);
+}
+
+footer {
+  background-color: var(--color-tertiary);
+  border-top: 1px solid #222;
+  padding: 2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-brand img {
+  height: 32px;
+  width: auto;
+}
+
+.social-links img {
+  height: 28px;
+  width: auto;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 4rem;
+}
+
+.columna-texto p {
+  color: var(--color-text-3);
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
