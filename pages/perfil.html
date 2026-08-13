@@ -7,360 +7,495 @@
     <meta name="description" content="Pantalla de perfil del usuario de MiProgreso">
     <meta name="author" content="Carlos López, Matías Mite, Rafael Chiriboga">
 
-    <title>MiProgreso | Perfil</title>
+    <title>MiProgreso - Perfil</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
 
-  <header>
+    <header class="main-header">
 
         <div class="logo">
-            <img src="../img/logo-miprogreso.png" alt="Logotipo oficial de MiProgreso">
+            <img src="../img/logo-miprogreso.png"
+                 alt="Logotipo oficial de MiProgreso">
         </div>
 
-        <nav aria-label="Menú superior">
+        <div class="search-box">
 
-            <a href="#" aria-label="Perfil del usuario">
-                <img src="../img/icon-user.png" alt="Icono de perfil">
-            </a>
+            <label for="input-buscar" class="sr-only">
+                Buscar
+            </label>
 
-    <nav>
-        <ul>
-             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="entrenar.html">Entrenar</a></li>
-            <li><a href="#">Rutinas</a></li>
-            <li><a href="#">Historial</a></li>
-            <li><a href="progreso.html">Progreso</a></li>
-        </ul>
-    </nav>
+            <input
+                type="search"
+                id="input-buscar"
+                name="busqueda"
+                placeholder="Buscar...">
 
-            <a href="#" aria-label="Menú principal">
-                <img src="../img/icon-menu.png" alt="Icono del menú principal">
-            </a>
+        </div>
 
-        </nav>
+        <div class="user-profile">
+
+            <img
+                src="../img/user-icon.png"
+                alt="Icono de perfil de usuario">
+
+        </div>
 
     </header>
 
-    <main>
 
-        <section aria-labelledby="titulo-perfil">
+    <div class="app-container">
 
-            <h1 id="titulo-perfil">
-                Información Personal
-            </h1>
 
-            <article>
+        <nav class="main-nav" aria-label="Menú principal">
 
-                <img src="../img/user-profile.png"
-                    alt="Imagen de perfil del usuario">
+            <ul>
 
-                <h2>
-                    Nombre de Usuario
-                </h2>
+                <li>
+                    <a href="entrenar.html" class="nav-btn">
+                        Entrenar
+                    </a>
+                </li>
 
-            </article>
+                <li>
+                    <a href="rutinas.html" class="nav-btn">
+                        Rutinas
+                    </a>
+                </li>
 
-            <form>
+                <li>
+                    <a href="historial.html" class="nav-btn">
+                        Historial
+                    </a>
+                </li>
 
-                <div>
+                <li>
+                    <a href="progreso.html" class="nav-btn">
+                        Progreso
+                    </a>
+                </li>
 
-                    <label for="correo">
-                        Dirección de correo electrónico
-                    </label>
+                <li>
+                    <a href="perfil.html" class="nav-btn">
+                        Perfil
+                    </a>
+                </li>
 
-                    <input
-                        type="email"
-                        id="correo"
-                        name="correo"
-                        value="User124@email.com">
+            </ul>
 
-                    <button type="button">
-                        Editar
-                    </button>
+        </nav>
 
-                </div>
 
-                <br>
 
-                <div>
-
-                    <label for="telefono">
-                        Número de teléfono
-                    </label>
-
-                    <input
-                        type="tel"
-                        id="telefono"
-                        name="telefono"
-                        value="0912345678">
-
-                    <button type="button">
-                        Editar
-                    </button>
-
-                </div>
-
-                <br>
-
-                <div>
-
-                    <label for="fecha">
-                        Fecha de nacimiento
-                    </label>
-
-                    <input
-                        type="date"
-                        id="fecha"
-                        name="fecha">
-
-                    <button type="button">
-                        Editar
-                    </button>
-
-                </div>
-
-            </form>
-
-        </section>
-
-        <section aria-labelledby="titulo-preferencias">
-
-            <h2 id="titulo-preferencias">
-                Preferencias del Sistema
-            </h2>
+        <main class="profile-content">
 
             <form>
 
-                <div>
+                <div class="profile-layout">
 
-                    <label for="tema">
-                        Tema
-                    </label>
 
-                    <select
-                        id="tema"
-                        name="tema">
 
-                        <option>
-                            Claro
-                        </option>
+                    <section
+                        class="profile-card"
+                        aria-labelledby="titulo-perfil">
 
-                        <option selected>
-                            Oscuro
-                        </option>
+                        <h2 id="titulo-perfil">
+                            Información Personal
+                        </h2>
 
-                    </select>
+
+                        <div class="profile-avatar">
+
+                            <img
+                                src="../img/user-profile.png"
+                                alt="Imagen de perfil del usuario">
+
+                        </div>
+
+
+                        <h3 class="profile-name">
+                            Nombre de Usuario
+                        </h3>
+
+
+                        <div class="profile-form">
+
+
+
+                            <div class="profile-field">
+
+                                <div class="profile-field-info">
+
+                                    <label for="correo">
+                                        Dirección email
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        id="correo"
+                                        name="correo"
+                                        value="User124@email.com">
+
+                                </div>
+
+                                <button
+                                    class="edit-btn"
+                                    type="button">
+
+                                    Editar
+
+                                </button>
+
+                            </div>
+
+
+
+                            <div class="profile-field">
+
+                                <div class="profile-field-info">
+
+                                    <label for="telefono">
+                                        Número de Teléfono
+                                    </label>
+
+                                    <input
+                                        type="tel"
+                                        id="telefono"
+                                        name="telefono"
+                                        value="0912345678">
+
+                                </div>
+
+                                <button
+                                    class="edit-btn"
+                                    type="button">
+
+                                    Editar
+
+                                </button>
+
+                            </div>
+
+
+
+                            <div class="profile-field">
+
+                                <div class="profile-field-info">
+
+                                    <label for="fecha">
+                                        Fecha de nacimiento
+                                    </label>
+
+                                    <input
+                                        type="date"
+                                        id="fecha"
+                                        name="fecha"
+                                        value="2001-01-01">
+
+                                </div>
+
+                                <button
+                                    class="edit-btn"
+                                    type="button">
+
+                                    Editar
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <section
+                        class="preferences-card"
+                        aria-labelledby="titulo-preferencias">
+
+                        <h2 id="titulo-preferencias">
+                            Preferencias del Sistema
+                        </h2>
+
+                        <div class="preference-item">
+
+                            <label>
+                                Tema
+                            </label>
+
+                            <div class="theme-options">
+
+                                <span class="theme-option">
+                                    ☀ Claro
+                                </span>
+
+                                <span class="theme-option active">
+                                    ☾ Oscuro
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="preference-item">
+
+                            <label for="idioma">
+                                Idioma
+                            </label>
+
+                            <select
+                                id="idioma"
+                                name="idioma">
+
+                                <option selected>
+                                    Español
+                                </option>
+
+                                <option>
+                                    English
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="preference-item">
+
+                            <label for="recomendacion">
+                                Recomendación de Entrenamiento
+                            </label>
+
+                            <select
+                                id="recomendacion"
+                                name="recomendacion">
+
+                                <option selected>
+                                    Diario
+                                </option>
+
+                                <option>
+                                    Semanal
+                                </option>
+
+                                <option>
+                                    Personalizado
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                      
+
+                        <div class="preference-item">
+
+                            <label for="unidad">
+                                Unidad de medida
+                            </label>
+
+                            <select
+                                id="unidad"
+                                name="unidad">
+
+                                <option selected>
+                                    Kilogramos (kg)
+                                </option>
+
+                                <option>
+                                    Libras (lb)
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="preference-item">
+
+                            <label>
+                                Formato de Fecha
+                            </label>
+
+                            <div class="date-format">
+
+                                <strong>
+                                    DD/MM/AAAA
+                                </strong>
+
+                                <span>
+                                    MM/DD/AAAA
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="preference-item">
+
+                            <label>
+                                Notificaciones
+                            </label>
+
+                            <div class="notification-options">
+
+                                <span class="notification-option active">
+                                    Activado
+                                </span>
+
+                                <span class="notification-option">
+                                    Desactivado
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </section>
 
                 </div>
 
-                <br>
 
-                <div>
+               
 
-                    <label for="idioma">
-                        Idioma
-                    </label>
+                <section
+                    class="save-area"
+                    aria-label="Guardar cambios">
 
-                    <select
-                        id="idioma"
-                        name="idioma">
+                    <button
+                        class="save-btn"
+                        type="submit">
 
-                        <option selected>
-                            Español
-                        </option>
+                        Guardar<br>
+                        Cambios
 
-                        <option>
-                            English
-                        </option>
+                    </button>
 
-                    </select>
-
-                </div>
-
-                <br>
-
-                <div>
-
-                    <label for="recomendacion">
-                        Recomendación de entrenamiento
-                    </label>
-
-                    <select
-                        id="recomendacion"
-                        name="recomendacion">
-
-                        <option selected>
-                            Diario
-                        </option>
-
-                        <option>
-                            Semanal
-                        </option>
-
-                        <option>
-                            Personalizado
-                        </option>
-
-                    </select>
-
-                </div>
-
-                <br>
-
-                <div>
-
-                    <label for="unidad">
-                        Unidad de medida
-                    </label>
-
-                    <select
-                        id="unidad"
-                        name="unidad">
-
-                        <option selected>
-                            Kilogramos (kg)
-                        </option>
-
-                        <option>
-                            Libras (lb)
-                        </option>
-
-                    </select>
-
-                </div>
-
-                <br>
-
-                <div>
-
-                    <label for="formato">
-                        Formato de fecha
-                    </label>
-
-                    <select
-                        id="formato"
-                        name="formato">
-
-                        <option selected>
-                            DD/MM/AAAA
-                        </option>
-
-                        <option>
-                            MM/DD/AAAA
-                        </option>
-
-                    </select>
-
-                </div>
-
-                <br>
-
-                <div>
-
-                    <label for="notificaciones">
-                        Notificaciones
-                    </label>
-
-                    <select
-                        id="notificaciones"
-                        name="notificaciones">
-
-                        <option selected>
-                            Activado
-                        </option>
-
-                        <option>
-                            Desactivado
-                        </option>
-
-                    </select>
-
-                </div>
+                </section>
 
             </form>
 
-        </section>
+        </main>
 
-        <!-- Guardar cambios -->
+    </div>
 
-        <section aria-label="Guardar cambios">
-
-            <button type="submit">
-                Guardar Cambios
-            </button>
-
-        </section>
-
-    </main>
-
-    <footer>
+    <footer class="main-footer">
 
         <div class="footer-brand">
 
-            <img src="../img/logo-miprogreso.png"
+            <img
+                src="../img/logo-miprogreso.png"
                 alt="Logotipo de MiProgreso">
+
+            <div class="social-links">
+
+                <a
+                    href="https://facebook.com"
+                    aria-label="Facebook">
+
+                    <img
+                        src="../img/facebook.png"
+                        alt="Facebook">
+
+                </a>
+
+
+                <a
+                    href="https://instagram.com"
+                    aria-label="Instagram">
+
+                    <img
+                        src="../img/instagram.png"
+                        alt="Instagram">
+
+                </a>
+
+
+                <a
+                    href="https://x.com"
+                    aria-label="Red social X">
+
+                    <img
+                        src="../img/x.png"
+                        alt="Red social X">
+
+                </a>
+
+            </div>
 
         </div>
 
-        <section aria-label="Información del sitio">
 
-            <article>
+        <div class="footer-columns">
 
-                <h3>
+
+            <article class="columna-texto">
+
+                <h4>
                     Texto
-                </h3>
+                </h4>
 
                 <p>
                     Información general de la plataforma.
                 </p>
 
-            </article>
-
-            <article>
-
-                <h3>
-                    Texto
-                </h3>
+                <p>
+                    Control de tus entrenamientos.
+                </p>
 
                 <p>
-                    Políticas y privacidad.
+                    Seguimiento de tu progreso.
                 </p>
 
             </article>
 
-            <article>
 
-                <h3>
+            <article class="columna-texto">
+
+                <h4>
                     Texto
-                </h3>
+                </h4>
+
+                <p>
+                    Términos y condiciones.
+                </p>
+
+                <p>
+                    Políticas de privacidad.
+                </p>
+
+                <p>
+                    Preguntas frecuentes.
+                </p>
+
+            </article>
+
+
+            <article class="columna-texto">
+
+                <h4>
+                    Texto
+                </h4>
 
                 <p>
                     Contacto y soporte.
                 </p>
 
+                <p>
+                    Información del sistema.
+                </p>
+
+                <p>
+                    Versión de MiProgreso.
+                </p>
+
             </article>
 
-        </section>
-
-        <nav aria-label="Redes sociales">
-
-            <a href="https://facebook.com">
-                <img src="../img/facebook.png"
-                    alt="Facebook">
-            </a>
-
-            <a href="https://instagram.com">
-                <img src="../img/instagram.png"
-                    alt="Instagram">
-            </a>
-
-            <a href="https://x.com">
-                <img src="../img/x.png"
-                    alt="Red social X">
-            </a>
-
-        </nav>
+        </div>
 
     </footer>
 
