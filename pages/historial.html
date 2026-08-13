@@ -6,101 +6,157 @@
     <meta name="description" content="Historial de entrenamientos - MiProgreso">
     <meta name="author" content="Carlos López, Matías Mite, Rafael Chiriboga">
     <title>MiProgreso | Historial</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
-    <header>
+    <header class="main-header">
         <div class="logo">
-            <img src="../img/logo-miprogreso.png" alt="Logotipo oficial de MiProgreso">
+            <a href="../index.html">
+                <img src="../img/LOGO.png" alt="Logotipo oficial de MiProgreso">
+            </a>
         </div>
         
         <div class="search-box">
-            <label for="input-buscar">Buscar:</label>
-            <input type="search" id="input-buscar" name="busqueda" placeholder="Buscar...">
+            <label for="input-buscar" class="sr-only">Buscar</label>
+            <input type="search" id="input-buscar" name="busqueda" class="form-input" placeholder="Buscar...">
         </div>
 
         <div class="user-profile">
-            <a href="perfil.html">
-                <img src="../img/user-icon.png" alt="Icono de perfil de usuario">
+            <a href="../pages/perfil.html" aria-label="Menú de usuario">
+                <img src="../img/perfil.png" alt="Icono de perfil de usuario">
             </a>
         </div>
     </header>
 
-    <nav aria-label="Menú principal">
-        <ul>
-            <li><a href="../index.html">Entrenar</a></li>
-            <li><a href="rutinas.html">Rutinas</a></li>
-            <li><a href="historial.html">Historial</a></li>
-            <li><a href="progreso.html">Progreso</a></li>
-            <li><a href="perfil.html">Perfil</a></li>
-        </ul>
-    </nav>
+    <div class="app-container">
+        
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="../index.html" class="nav-btn">
+                        <img src="../img/mancuerna.png" alt="" class="nav-icon">
+                        <span>ENTRENAR</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/rutinas.html" class="nav-btn">
+                        <img src="../img/registro.png" alt="" class="nav-icon">
+                        <span>RUTINAS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/historial.html" class="nav-btn active">
+                        <img src="../img/historial.png" alt="" class="nav-icon">
+                        <span>HISTORIAL</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/progreso.html" class="nav-btn">
+                        <img src="../img/progreso.png" alt="" class="nav-icon">
+                        <span>PROGRESO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/perfil.html" class="nav-btn">
+                        <img src="../img/perfil.png" alt="" class="nav-icon">
+                        <span>PERFIL</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <main>
-        <section aria-labelledby="titulo-historial">
-            <h1 id="titulo-historial">HISTORIAL</h1>
-            
-            <div class="search-ejercicio">
-                <label for="buscar-ejercicio">Buscar ejercicio:</label>
-                <input type="search" id="buscar-ejercicio" placeholder="Buscar ejercicio...">
-            </div>
+        <main class="main-content">
+            <section aria-labelledby="titulo-historial">
+                <div class="content-header">
+                    <h1 id="titulo-historial">HISTORIAL</h1>
+                    
+                    <div class="search-ejercicio">
+                        <label for="buscar-ejercicio" class="sr-only">Buscar ejercicio</label>
+                        <input type="search" id="buscar-ejercicio" placeholder="Buscar ejercicio...">
+                    </div>
+                </div>
 
-            <div class="cards-container">
-                <article class="tarjeta-historial">
-                    <p>Fecha: <strong>07/02/26</strong></p>
-                    <p>Rutina: <strong class="highlight">Full Body</strong></p>
-                    <p>Duración: <strong>120min</strong></p>
-                </article>
-                
-                <article class="tarjeta-historial">
-                    <p>Fecha: <strong>07/02/26</strong></p>
-                    <p>Rutina: <strong class="highlight">Core</strong></p>
-                    <p>Duración: <strong>120min</strong></p>
-                </article>
+                <div class="cards-container">
+                    <article class="tarjeta-historial">
+                        <div class="columna-dato">
+                            <span>Fecha</span>
+                            <span>07/02/26</span>
+                        </div>
+                        <div class="columna-dato">
+                            <span>Rutina</span>
+                            <span class="highlight">Full Body</span>
+                        </div>
+                        <div class="columna-dato">
+                            <span>Duración</span>
+                            <span>120min</span>
+                        </div>
+                    </article>
+                    
+                    <article class="tarjeta-historial">
+                        <div class="columna-dato">
+                            <span>Fecha</span>
+                            <span>07/02/26</span>
+                        </div>
+                        <div class="columna-dato">
+                            <span>Rutina</span>
+                            <span class="highlight">Core</span>
+                        </div>
+                        <div class="columna-dato">
+                            <span>Duración</span>
+                            <span>120min</span>
+                        </div>
+                    </article>
 
-                <article class="tarjeta-historial">
-                    <p>Fecha: <strong>07/02/26</strong></p>
-                    <p>Rutina: <strong class="highlight">Push Day</strong></p>
-                    <p>Duración: <strong>120min</strong></p>
-                </article>
-            </div>
-        </section>
-    </main>
+                    <article class="tarjeta-historial">
+                        <div class="columna-dato">
+                            <span>Fecha</span>
+                            <span>07/02/26</span>
+                        </div>
+                        <div class="columna-dato">
+                            <span>Rutina</span>
+                            <span class="highlight">Push Day</span>
+                        </div>
+                        <div class="columna-dato">
+                            <span>Duración</span>
+                            <span>120min</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <div class="footer-brand">
-            <img src="../img/logo-miprogreso.png" alt="Logotipo institucional de MiProgreso en pie de página">
+            <img src="../img/LOGO.png" alt="Logotipo MiProgreso">
             <div class="social-links">
-                <a href="https://facebook.com" aria-label="Visítanos en Facebook">
-                    <img src="../img/facebook-icon.png" alt="Logo de Facebook">
-                </a>
-                <a href="https://instagram.com" aria-label="Visítanos en Instagram">
-                    <img src="../img/instagram-icon.png" alt="Logo de Instagram">
-                </a>
-                <a href="https://x.com" aria-label="Visítanos en X">
-                    <img src="../img/x-icon.png" alt="Logo de X">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Redes Sociales">
+                    <img src="../img/redes.png" alt="Redes Sociales">
                 </a>
             </div>
         </div>
+
         <div class="footer-columns">
             <article class="columna-texto">
-                <h4>Texto</h4>
-                <p>Información y soporte para optimizar tu rendimiento físico diario.</p>
-                <p>Control de pesos y repeticiones a tu alcance.</p>
-                <p>Plataforma web oficial de seguimiento.</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
             </article>
             <article class="columna-texto">
-                <h4>Texto</h4>
-                <p>Términos y condiciones de uso de la comunidad.</p>
-                <p>Políticas de privacidad y manejo de datos personales.</p>
-                <p>Preguntas frecuentes sobre tus rutinas.</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
             </article>
             <article class="columna-texto">
-                <h4>Texto</h4>
-                <p>Contacto directo con soporte técnico y entrenadores.</p>
-                <p>Ubicación de centros de entrenamiento asociados.</p>
-                <p>Versión actual del sistema web.</p>
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
             </article>
         </div>
     </footer>

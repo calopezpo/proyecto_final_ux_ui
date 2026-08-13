@@ -249,3 +249,135 @@ footer {
   font-size: 0.95rem;
   margin-bottom: 0.4rem;
 }
+
+/* ==========================================================================
+   ESTILOS ESPECÍFICOS: HISTORIAL
+   ========================================================================== */
+
+/* Cabecera del contenido con título y buscador alineados */
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.content-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.search-ejercicio {
+  width: 100%;
+  max-width: 320px;
+}
+
+.search-ejercicio input {
+  width: 100%;
+  background-color: var(--color-tertiary);
+  border: 1px solid #444;
+  color: var(--color-text-2);
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  outline: none;
+  font-family: var(--font-family);
+}
+
+/* Contenedor y diseño de las tarjetas de historial */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tarjeta-historial {
+  background-color: var(--color-tertiary);
+  border: 1px solid #333;
+  border-radius: var(--radius-md);
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.tarjeta-historial .columna-dato {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+}
+
+.tarjeta-historial .columna-dato:not(:last-child) {
+  border-right: 1px solid #444;
+}
+
+.tarjeta-historial span:first-child {
+  font-size: 0.85rem;
+  color: var(--color-text-3);
+  font-weight: 600;
+}
+
+.tarjeta-historial span:last-child {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.tarjeta-historial .highlight {
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   MEDIA QUERY: RESPONSIVE PARA MÓVILES (Pantallas menores a 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  /* Ocultar el menú lateral de escritorio en móvil */
+  .main-nav {
+    display: none;
+  }
+
+  /* Ajustar el contenedor general a una sola columna */
+  .app-container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  /* El contenido principal ocupa todo el ancho */
+  .main-content {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Apilar el título y la barra de búsqueda en pantallas pequeñas */
+  .content-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .search-ejercicio {
+    max-width: 100%;
+  }
+
+  /* Reducir padding de las tarjetas en móviles para que no desborden */
+  .tarjeta-historial {
+    padding: 1rem;
+  }
+
+  /* Ajustar el footer para que se apile de forma vertical */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
