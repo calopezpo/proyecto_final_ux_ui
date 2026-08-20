@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiProgreso - Dashboard</title>
-    
+    <meta name="description" content="Pantalla dashboard de MiProgreso">
+    <meta name="author" content="Carlos López, Matías Mite, Rafael Chiriboga">
+
+    <title>MiProgreso</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
 
+    <!-- HEADER -->
     <header class="main-header">
-        <!-- Checkbox invisible para controlar el menú hamburguesa por CSS puro -->
         <input type="checkbox" id="menu-toggle-checkbox" class="sr-only">
 
         <div class="logo">
-            <a href="index.html">
-                <img src="img/LOGO.png" alt="Logotipo oficial de MiProgreso">
+            <a href="../index.html">
+                <img src="../img/LOGO.png" alt="Logotipo oficial de MiProgreso">
             </a>
         </div>
 
@@ -28,11 +33,10 @@
             <input type="search" id="input-buscar" name="busqueda" class="form-input" placeholder="Buscar...">
         </div>
 
-        <!-- Grupo derecho: Perfil + Botón de Hamburguesa -->
         <div class="header-right-group">
             <div class="user-profile">
-                <a href="pages/perfil.html" aria-label="Menú de usuario">
-                    <img src="img/perfil.png" alt="Icono de perfil de usuario">
+                <a href="../pages/perfil.html" aria-label="Menú de usuario">
+                    <img src="../img/perfil.png" alt="Icono de perfil de usuario">
                 </a>
             </div>
 
@@ -44,38 +48,39 @@
         </div>
     </header>
 
+    <!-- CONTENEDOR PRINCIPAL -->
     <div class="app-layout">
-        
-         <!-- MENÚ LATERAL -->
+
+        <!-- MENÚ LATERAL -->
         <nav class="main-nav" aria-label="Menú principal">
             <ul>
                 <li>
-                    <a href="pages/entrenar.html" class="nav-btn">
-                        <img src="img/mancuerna.png" alt="" class="nav-icon">
+                    <a href="../pages/entrenar.html" class="nav-btn">
+                        <img src="../img/mancuerna.png" alt="" class="nav-icon">
                         <span>ENTRENAR</span>
                     </a>
                 </li>
                 <li>
-                    <a href="pages/rutinas.html" class="nav-btn">
-                        <img src="img/registro.png" alt="" class="nav-icon">
+                    <a href="../pages/rutinas.html" class="nav-btn">
+                        <img src="../img/registro.png" alt="" class="nav-icon">
                         <span>RUTINAS</span>
                     </a>
                 </li>
                 <li>
-                    <a href="pages/historial.html" class="nav-btn">
-                        <img src="img/historial.png" alt="" class="nav-icon">
+                    <a href="../pages/historial.html" class="nav-btn">
+                        <img src="../img/historial.png" alt="" class="nav-icon">
                         <span>HISTORIAL</span>
                     </a>
                 </li>
                 <li>
-                    <a href="pages/progreso.html" class="nav-btn">
-                        <img src="img/progreso.png" alt="" class="nav-icon">
+                    <a href="../pages/progreso.html" class="nav-btn">
+                        <img src="../img/progreso.png" alt="" class="nav-icon">
                         <span>PROGRESO</span>
                     </a>
                 </li>
                 <li>
-                    <a href="pages/perfil.html" class="nav-btn tarjeta-activa">
-                        <img src="img/perfil.png" alt="" class="nav-icon">
+                    <a href="../pages/perfil.html" class="nav-btn tarjeta-activa">
+                        <img src="../img/perfil.png" alt="" class="nav-icon">
                         <span>PERFIL</span>
                     </a>
                 </li>
