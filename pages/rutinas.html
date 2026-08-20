@@ -16,6 +16,9 @@
 <body>
 
     <header class="main-header">
+        <!-- Checkbox invisible para controlar el menú hamburguesa por CSS puro -->
+        <input type="checkbox" id="menu-toggle-checkbox" class="sr-only">
+
         <div class="logo">
             <a href="../index.html">
                 <img src="../img/LOGO.png" alt="Logotipo oficial de MiProgreso">
@@ -27,25 +30,34 @@
             <input type="search" id="input-buscar" name="busqueda" class="form-input" placeholder="Buscar...">
         </div>
 
-        <div class="user-profile">
-            <a href="../pages/perfil.html" aria-label="Menú de usuario">
-                <img src="../img/perfil.png" alt="Icono de perfil de usuario">
-            </a>
+        <!-- Grupo derecho: Perfil + Botón de Hamburguesa -->
+        <div class="header-right-group">
+            <div class="user-profile">
+                <a href="../pages/perfil.html" aria-label="Menú de usuario">
+                    <img src="../img/perfil.png" alt="Icono de perfil de usuario">
+                </a>
+            </div>
+
+            <label for="menu-toggle-checkbox" class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
     </header>
 
-    <div class="app-container">
+    <div class="app-layout">
         
         <nav class="main-nav">
             <ul>
                 <li>
-                    <a href="../index.html" class="nav-btn">
+                    <a href="../entrenar.html" class="nav-btn">
                         <img src="../img/mancuerna.png" alt="" class="nav-icon">
                         <span>ENTRENAR</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../pages/rutinas.html" class="nav-btn active">
+                    <a href="../pages/rutinas.html" class="nav-btn tarjeta-activa">
                         <img src="../img/registro.png" alt="" class="nav-icon">
                         <span>RUTINAS</span>
                     </a>
@@ -84,41 +96,47 @@
                 <div class="cards-container rutinas-grid">
                     <!-- Tarjeta 1: Full Body -->
                     <article class="tarjeta-rutina">
-                        <div class="rutina-imagen">
-                            <img src="../img/fullbody.png" alt="Esquema muscular Full Body">
+                        <div class="rutina-contenido-interno">
+                            <div class="rutina-imagen">
+                                <img src="../img/fullbody.png" alt="Esquema muscular Full Body">
+                            </div>
+                            <div class="rutina-info">
+                                <h2>Full Body</h2>
+                                <p>6 ejercicios | 90min</p>
+                                <p>Intensidad: Alta</p>
+                            </div>
                         </div>
-                        <div class="rutina-info">
-                            <h2>Full Body</h2>
-                            <p>6 ejercicios | 90min</p>
-                            <p>Intensidad: Alta</p>
-                            <button class="btn-comenzar" type="button">Comenzar</button>
-                        </div>
+                        <button class="btn-comenzar" type="button">Comenzar</button>
                     </article>
                     
                     <!-- Tarjeta 2: Leg Day -->
                     <article class="tarjeta-rutina">
-                        <div class="rutina-imagen">
-                            <img src="../img/legday.png" alt="Esquema muscular Leg Day">
+                        <div class="rutina-contenido-interno">
+                            <div class="rutina-imagen">
+                                <img src="../img/legday.png" alt="Esquema muscular Leg Day">
+                            </div>
+                            <div class="rutina-info">
+                                <h2>Leg Day</h2>
+                                <p>6 ejercicios | 90min</p>
+                                <p>Intensidad: Alta</p>
+                            </div>
                         </div>
-                        <div class="rutina-info">
-                            <h2>Leg Day</h2>
-                            <p>6 ejercicios | 90min</p>
-                            <p>Intensidad: Alta</p>
-                            <button class="btn-comenzar" type="button">Comenzar</button>
-                        </div>
+                        <button class="btn-comenzar" type="button">Comenzar</button>
                     </article>
 
                     <!-- Tarjeta 3: Core -->
                     <article class="tarjeta-rutina">
-                        <div class="rutina-imagen">
-                            <img src="../img/core.png" alt="Esquema muscular Core">
+                        <div class="rutina-contenido-interno">
+                            <div class="rutina-imagen">
+                                <img src="../img/core.png" alt="Esquema muscular Core">
+                            </div>
+                            <div class="rutina-info">
+                                <h2>Core</h2>
+                                <p>6 ejercicios | 90min</p>
+                                <p>Intensidad: Alta</p>
+                            </div>
                         </div>
-                        <div class="rutina-info">
-                            <h2>Core</h2>
-                            <p>6 ejercicios | 90min</p>
-                            <p>Intensidad: Alta</p>
-                            <button class="btn-comenzar" type="button">Comenzar</button>
-                        </div>
+                        <button class="btn-comenzar" type="button">Comenzar</button>
                     </article>
                 </div>
             </section>

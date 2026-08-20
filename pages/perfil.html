@@ -20,6 +20,7 @@
 
     <!-- HEADER -->
     <header class="main-header">
+        <input type="checkbox" id="menu-toggle-checkbox" class="sr-only">
 
         <div class="logo">
             <a href="../index.html">
@@ -47,18 +48,17 @@
                     alt="Icono de perfil de usuario">
             </a>
         </div>
-
     </header>
 
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="app-layout">
 
     <!-- CONTENEDOR PRINCIPAL -->
     <div class="app-container">
 
         <!-- MENÚ LATERAL -->
         <nav class="main-nav" aria-label="Menú principal">
-
             <ul>
-
                 <li>
                     <a href="entrenar.html" class="nav-btn">
                         <img src="../img/mancuerna.png"
@@ -67,7 +67,6 @@
                         <span>ENTRENAR</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="rutinas.html" class="nav-btn">
                         <img src="../img/registro.png"
@@ -76,7 +75,6 @@
                         <span>RUTINAS</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="historial.html" class="nav-btn">
                         <img src="../img/historial.png"
@@ -85,7 +83,6 @@
                         <span>HISTORIAL</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="progreso.html" class="nav-btn">
                         <img src="../img/progreso.png"
@@ -94,7 +91,6 @@
                         <span>PROGRESO</span>
                     </a>
                 </li>
-
                 <li>
                     <a href="perfil.html" class="nav-btn active">
                         <img src="../img/perfil.png"
@@ -103,11 +99,15 @@
                         <span>PERFIL</span>
                     </a>
                 </li>
-
             </ul>
-
         </nav>
 
+        <!-- CONTENIDO DEL PERFIL -->
+        <main class="main-content profile-content">
+            <div class="profile-page-header">
+                <h1>Configuración de Perfil</h1>
+                <p>Administra tu información personal y preferencias del sistema.</p>
+            </div>
 
         <!-- CONTENIDO DEL PERFIL -->
         <main class="main-content profile-content">
@@ -135,19 +135,9 @@
 
                             <!-- CORREO -->
                             <div class="profile-field">
-
                                 <div class="profile-field-info">
-
-                                    <label for="correo">
-                                        Dirección email
-                                    </label>
-
-                                    <input
-                                        type="email"
-                                        id="correo"
-                                        name="correo"
-                                        value="User124@email.com">
-
+                                    <label for="correo">Dirección email</label>
+                                    <input type="email" id="correo" name="correo" value="User124@email.com">
                                 </div>
 
                                 <button
@@ -161,19 +151,9 @@
 
                             <!-- TELÉFONO -->
                             <div class="profile-field">
-
                                 <div class="profile-field-info">
-
-                                    <label for="telefono">
-                                        Número de Teléfono
-                                    </label>
-
-                                    <input
-                                        type="tel"
-                                        id="telefono"
-                                        name="telefono"
-                                        value="0912345678">
-
+                                    <label for="telefono">Número de Teléfono</label>
+                                    <input type="tel" id="telefono" name="telefono" value="0912345678">
                                 </div>
 
                                 <button
@@ -187,19 +167,9 @@
 
                             <!-- FECHA DE NACIMIENTO -->
                             <div class="profile-field">
-
                                 <div class="profile-field-info">
-
-                                    <label for="fecha">
-                                        Fecha de nacimiento
-                                    </label>
-
-                                    <input
-                                        type="date"
-                                        id="fecha"
-                                        name="fecha"
-                                        value="2001-01-01">
-
+                                    <label for="fecha">Fecha de nacimiento</label>
+                                    <input type="date" id="fecha" name="fecha" value="2001-01-01">
                                 </div>
 
                                 <button
@@ -209,9 +179,7 @@
                                 </button>
 
                             </div>
-
                         </div>
-
                     </section>
 
 
@@ -242,147 +210,67 @@
                             <label>Tema</label>
 
                             <div class="theme-options">
-
-                                <span class="theme-option">
-                                    ☀ Claro
-                                </span>
-
-                                <span class="theme-option active">
-                                    ☾ Oscuro
-                                </span>
-
+                                <span class="theme-option">☀️ Claro</span>
+                                <span class="theme-option active">☾ Oscuro</span>
                             </div>
-
                         </div>
 
 
                         <!-- IDIOMA -->
                         <div class="preference-item">
-
-                            <label for="idioma">
-                                Idioma
-                            </label>
-
-                            <select
-                                id="idioma"
-                                name="idioma">
-
-                                <option selected>
-                                    Español
-                                </option>
-
-                                <option>
-                                    English
-                                </option>
-
+                            <label for="idioma">Idioma</label>
+                            <select id="idioma" name="idioma">
+                                <option selected>Español</option>
+                                <option>English</option>
                             </select>
-
                         </div>
 
 
                         <!-- RECOMENDACIÓN -->
                         <div class="preference-item">
-
-                            <label for="recomendacion">
-                                Recomendación de Entrenamiento
-                            </label>
-
-                            <select
-                                id="recomendacion"
-                                name="recomendacion">
-
-                                <option selected>
-                                    Diario
-                                </option>
-
-                                <option>
-                                    Semanal
-                                </option>
-
-                                <option>
-                                    Personalizado
-                                </option>
-
+                            <label for="recomendacion">Recomendación de Entrenamiento</label>
+                            <select id="recomendacion" name="recomendacion">
+                                <option selected>Diario</option>
+                                <option>Semanal</option>
+                                <option>Personalizado</option>
                             </select>
-
                         </div>
 
 
                         <!-- UNIDAD -->
                         <div class="preference-item">
-
-                            <label for="unidad">
-                                Unidad de medida
-                            </label>
-
-                            <select
-                                id="unidad"
-                                name="unidad">
-
-                                <option selected>
-                                    Kilogramos (kg)
-                                </option>
-
-                                <option>
-                                    Libras (lb)
-                                </option>
-
+                            <label for="unidad">Unidad de medida</label>
+                            <select id="unidad" name="unidad">
+                                <option selected>Kilogramos (kg)</option>
+                                <option>Libras (lb)</option>
                             </select>
-
                         </div>
 
 
                         <!-- FORMATO FECHA -->
                         <div class="preference-item">
-
-                            <label>
-                                Formato de Fecha
-                            </label>
-
+                            <label>Formato de Fecha</label>
                             <div class="date-format">
-
-                                <strong>
-                                    DD/MM/AAAA
-                                </strong>
-
-                                <span>
-                                    MM/DD/AAAA
-                                </span>
-
+                                <strong>DD/MM/AAAA</strong>
+                                <span>MM/DD/AAAA</span>
                             </div>
-
                         </div>
 
 
                         <!-- NOTIFICACIONES -->
                         <div class="preference-item">
-
-                            <label>
-                                Notificaciones
-                            </label>
-
+                            <label>Notificaciones</label>
                             <div class="notification-options">
-
-                                <span class="notification-option active">
-                                    Activado
-                                </span>
-
-                                <span class="notification-option">
-                                    Desactivado
-                                </span>
-
+                                <span class="notification-option active">Activado</span>
+                                <span class="notification-option">Desactivado</span>
                             </div>
-
                         </div>
-
                     </section>
 
                 </div>
 
             </form>
-
         </main>
-
     </div>
 
 
@@ -405,11 +293,8 @@
                         alt="Redes Sociales">
 
                 </a>
-
             </div>
-
         </div>
-
 
         <div class="footer-columns">
 
@@ -432,9 +317,7 @@
             </article>
 
         </div>
-
     </footer>
 
 </body>
-
 </html>

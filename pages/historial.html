@@ -16,6 +16,9 @@
 <body>
 
     <header class="main-header">
+        <!-- Checkbox invisible para controlar el menú hamburguesa por CSS puro -->
+        <input type="checkbox" id="menu-toggle-checkbox" class="sr-only">
+
         <div class="logo">
             <a href="../index.html">
                 <img src="../img/LOGO.png" alt="Logotipo oficial de MiProgreso">
@@ -27,14 +30,23 @@
             <input type="search" id="input-buscar" name="busqueda" class="form-input" placeholder="Buscar...">
         </div>
 
-        <div class="user-profile">
-            <a href="../pages/perfil.html" aria-label="Menú de usuario">
-                <img src="../img/perfil.png" alt="Icono de perfil de usuario">
-            </a>
+        <!-- Grupo derecho: Perfil + Botón de Hamburguesa -->
+        <div class="header-right-group">
+            <div class="user-profile">
+                <a href="../pages/perfil.html" aria-label="Menú de usuario">
+                    <img src="../img/perfil.png" alt="Icono de perfil de usuario">
+                </a>
+            </div>
+
+            <label for="menu-toggle-checkbox" class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
     </header>
 
-    <div class="app-container">
+    <div class="app-layout">
         
         <nav class="main-nav">
             <ul>
@@ -51,7 +63,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../pages/historial.html" class="nav-btn active">
+                    <a href="../pages/historial.html" class="nav-btn tarjeta-activa">
                         <img src="../img/historial.png" alt="" class="nav-icon">
                         <span>HISTORIAL</span>
                     </a>
