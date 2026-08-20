@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pantalla de perfil del usuario de MiProgreso">
-    <meta name="author" content="Carlos López, Matías Mite, Rafael Chiriboga">
 
     <title>MiProgreso - Perfil</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -24,63 +24,78 @@
 
         <div class="logo">
             <a href="../index.html">
-                <img src="../img/LOGO.png" alt="Logotipo oficial de MiProgreso">
+                <img src="../img/LOGO.png"
+                    alt="Logotipo oficial de MiProgreso">
             </a>
         </div>
 
         <div class="search-box">
-            <label for="input-buscar" class="sr-only">Buscar</label>
-            <input type="search" id="input-buscar" name="busqueda" class="form-input" placeholder="Buscar...">
+            <label for="input-buscar" class="sr-only">
+                Buscar
+            </label>
+
+            <input
+                type="search"
+                id="input-buscar"
+                name="busqueda"
+                class="form-input"
+                placeholder="Buscar...">
         </div>
 
-        <div class="header-right-group">
-            <div class="user-profile">
-                <a href="../pages/perfil.html" aria-label="Menú de usuario">
-                    <img src="../img/perfil.png" alt="Icono de perfil de usuario">
-                </a>
-            </div>
-
-            <label for="menu-toggle-checkbox" class="menu-toggle" aria-label="Abrir menú">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+        <div class="user-profile">
+            <a href="perfil.html" aria-label="Menú de usuario">
+                <img src="../img/perfil.png"
+                    alt="Icono de perfil de usuario">
+            </a>
         </div>
     </header>
 
     <!-- CONTENEDOR PRINCIPAL -->
     <div class="app-layout">
 
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="app-container">
+
         <!-- MENÚ LATERAL -->
         <nav class="main-nav" aria-label="Menú principal">
             <ul>
                 <li>
-                    <a href="../index.html" class="nav-btn">
-                        <img src="../img/mancuerna.png" alt="" class="nav-icon">
+                    <a href="entrenar.html" class="nav-btn">
+                        <img src="../img/mancuerna.png"
+                            alt=""
+                            class="nav-icon">
                         <span>ENTRENAR</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../pages/rutinas.html" class="nav-btn">
-                        <img src="../img/registro.png" alt="" class="nav-icon">
+                    <a href="rutinas.html" class="nav-btn">
+                        <img src="../img/registro.png"
+                            alt=""
+                            class="nav-icon">
                         <span>RUTINAS</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../pages/historial.html" class="nav-btn">
-                        <img src="../img/historial.png" alt="" class="nav-icon">
+                    <a href="historial.html" class="nav-btn">
+                        <img src="../img/historial.png"
+                            alt=""
+                            class="nav-icon">
                         <span>HISTORIAL</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../pages/progreso.html" class="nav-btn">
-                        <img src="../img/progreso.png" alt="" class="nav-icon">
+                    <a href="progreso.html" class="nav-btn">
+                        <img src="../img/progreso.png"
+                            alt=""
+                            class="nav-icon">
                         <span>PROGRESO</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../pages/perfil.html" class="nav-btn tarjeta-activa">
-                        <img src="../img/perfil.png" alt="" class="nav-icon">
+                    <a href="perfil.html" class="nav-btn active">
+                        <img src="../img/perfil.png"
+                            alt=""
+                            class="nav-icon">
                         <span>PERFIL</span>
                     </a>
                 </li>
@@ -94,58 +109,114 @@
                 <p>Administra tu información personal y preferencias del sistema.</p>
             </div>
 
+        <!-- CONTENIDO DEL PERFIL -->
+        <main class="main-content profile-content">
+
             <form class="profile-form-container">
+
                 <div class="profile-layout">
 
-                    <!-- COLUMNA IZQUIERDA: INFORMACIÓN PERSONAL -->
+                    <!-- INFORMACIÓN PERSONAL -->
                     <section class="profile-card">
+
                         <h2>Información Personal</h2>
 
                         <div class="profile-avatar">
-                            <img src="../img/perfil.png" alt="Imagen de perfil del usuario">
+                            <img src="../img/perfil.png"
+                                alt="Imagen de perfil del usuario">
                         </div>
 
-                        <h3 class="profile-name">Nombre de Usuario</h3>
+                        <h3 class="profile-name">
+                            Nombre de Usuario
+                        </h3>
+
 
                         <div class="profile-form">
+
+                            <!-- CORREO -->
                             <div class="profile-field">
                                 <div class="profile-field-info">
                                     <label for="correo">Dirección email</label>
                                     <input type="email" id="correo" name="correo" value="User124@email.com">
                                 </div>
-                                <button class="edit-btn" type="button">Editar</button>
+
+                                <button
+                                    class="edit-btn"
+                                    type="button">
+                                    Editar
+                                </button>
+
                             </div>
 
+
+                            <!-- TELÉFONO -->
                             <div class="profile-field">
                                 <div class="profile-field-info">
                                     <label for="telefono">Número de Teléfono</label>
                                     <input type="tel" id="telefono" name="telefono" value="0912345678">
                                 </div>
-                                <button class="edit-btn" type="button">Editar</button>
+
+                                <button
+                                    class="edit-btn"
+                                    type="button">
+                                    Editar
+                                </button>
+
                             </div>
 
+
+                            <!-- FECHA DE NACIMIENTO -->
                             <div class="profile-field">
                                 <div class="profile-field-info">
                                     <label for="fecha">Fecha de nacimiento</label>
                                     <input type="date" id="fecha" name="fecha" value="2001-01-01">
                                 </div>
-                                <button class="edit-btn" type="button">Editar</button>
+
+                                <button
+                                    class="edit-btn"
+                                    type="button">
+                                    Editar
+                                </button>
+
                             </div>
                         </div>
                     </section>
 
-                    <!-- COLUMNA DERECHA: PREFERENCIAS -->
+
+                    <!-- BOTÓN CENTRAL -->
+                    <section
+                        class="save-area"
+                        aria-label="Guardar cambios">
+
+                        <button
+                            class="save-btn"
+                            type="submit">
+                            Guardar<br>
+                            Cambios
+                        </button>
+
+                    </section>
+
+
+                    <!-- PREFERENCIAS -->
                     <section class="preferences-card">
+
                         <h2>Preferencias del Sistema</h2>
 
+
+                        <!-- TEMA -->
                         <div class="preference-item">
+
                             <label>Tema</label>
+
                             <div class="theme-options">
                                 <span class="theme-option">☀️ Claro</span>
                                 <span class="theme-option active">☾ Oscuro</span>
                             </div>
                         </div>
 
+
+                        <!-- IDIOMA -->
                         <div class="preference-item">
                             <label for="idioma">Idioma</label>
                             <select id="idioma" name="idioma">
@@ -154,6 +225,8 @@
                             </select>
                         </div>
 
+
+                        <!-- RECOMENDACIÓN -->
                         <div class="preference-item">
                             <label for="recomendacion">Recomendación de Entrenamiento</label>
                             <select id="recomendacion" name="recomendacion">
@@ -163,6 +236,8 @@
                             </select>
                         </div>
 
+
+                        <!-- UNIDAD -->
                         <div class="preference-item">
                             <label for="unidad">Unidad de medida</label>
                             <select id="unidad" name="unidad">
@@ -171,6 +246,8 @@
                             </select>
                         </div>
 
+
+                        <!-- FORMATO FECHA -->
                         <div class="preference-item">
                             <label>Formato de Fecha</label>
                             <div class="date-format">
@@ -179,6 +256,8 @@
                             </div>
                         </div>
 
+
+                        <!-- NOTIFICACIONES -->
                         <div class="preference-item">
                             <label>Notificaciones</label>
                             <div class="notification-options">
@@ -190,29 +269,53 @@
 
                 </div>
 
-                <!-- BOTÓN DE GUARDAR CAMBIOS (Abajo, limpio y centrado a lo ancho) -->
-                <div class="save-area">
-                    <button class="save-btn" type="submit">Guardar Cambios</button>
-                </div>
             </form>
         </main>
     </div>
 
+
     <!-- FOOTER -->
     <footer>
+
         <div class="footer-brand">
-            <img src="../img/LOGO.png" alt="Logotipo MiProgreso">
+
+            <img src="../img/LOGO.png"
+                alt="Logotipo MiProgreso">
+
             <div class="social-links">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Redes Sociales">
-                    <img src="../img/redes.png" alt="Redes Sociales">
+
+                <a href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Redes Sociales">
+
+                    <img src="../img/redes.png"
+                        alt="Redes Sociales">
+
                 </a>
             </div>
         </div>
 
         <div class="footer-columns">
-            <article class="columna-texto"><p>Texto</p><p>Texto</p><p>Texto</p></article>
-            <article class="columna-texto"><p>Texto</p><p>Texto</p><p>Texto</p></article>
-            <article class="columna-texto"><p>Texto</p><p>Texto</p><p>Texto</p></article>
+
+            <article class="columna-texto">
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+            </article>
+
+            <article class="columna-texto">
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+            </article>
+
+            <article class="columna-texto">
+                <p>Texto</p>
+                <p>Texto</p>
+                <p>Texto</p>
+            </article>
+
         </div>
     </footer>
 
